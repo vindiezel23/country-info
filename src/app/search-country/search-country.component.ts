@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { MatLabel } from '@angular/material';
-//import { MatAutocomplete, MatInput, MatFormField, MatFormFieldControl, MatPlaceholder } from '@angular/material';
 import { Observable, of } from 'rxjs';
 import {
     debounceTime,
@@ -12,7 +10,8 @@ import {
     distinctUntilChanged,
     filter,
     startWith, 
-    catchError
+    catchError,
+    defaultIfEmpty
 } from 'rxjs/operators';
 @Component({
   selector: 'search-country',
@@ -34,25 +33,23 @@ export class SearchCountryComponent implements OnInit {
         .pipe(
           startWith(''),
           debounceTime(500),
-          filter(query => query.length >= 3),
           distinctUntilChanged(),
-          catchError(err => of([])),
           tap(() => {
             this.errorMsg = "";
             this.filteredCountries = [];
             this.isLoading = true;
         }),
-        switchMap(value => this.http.get(`https://restcountries.eu/rest/v2/name/${value}`)
+        switchMap(value => value.length < 3 ? of([]) : this.http.get(`https://restcountries.eu/rest/v2/name/${value}`)
           .pipe(
             finalize(() => {
               this.isLoading = false;
             }),
+            catchError(err => this.filteredCountries = [])
           )
         )
     ).subscribe(data => {
         this.filteredCountries = data;
         this.isLoading = false;
-         console.log(data);
       });
   }
 }

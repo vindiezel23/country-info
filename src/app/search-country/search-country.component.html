@@ -1,11 +1,11 @@
 <div>
         <mat-form-field>
             <mat-label>Search</mat-label>
-            <input placeholder="Search" [floatLabel]="'always'" aria-label="State" matInput [matAutocomplete]="auto" [formControl]="searchCountriesCtrl">
+            <input placeholder="Search" aria-label="State" matInput [matAutocomplete]="auto" [formControl]="searchCountriesCtrl">
             <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
                 <mat-option *ngIf="isLoading" class="is-loading">Loading...</mat-option>
                 <ng-container *ngIf="!isLoading">
-                    <mat-option *ngFor="let country of filteredCountries" [value]="country.name">
+                    <mat-option *ngFor="let country of filteredCountries | slice:0:9" [value]="country.name">
                         <span><b>{{country.name}}</b> ({{country.alpha3Code}})</span>
                     </mat-option>
                 </ng-container>
