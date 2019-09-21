@@ -1,0 +1,14 @@
+/Users/KP/Projects/FlareTest/CountryInfo/bin/Debug/netcoreapp2.1/CountryInfo.deps.json
+/Users/KP/Projects/FlareTest/CountryInfo/bin/Debug/netcoreapp2.1/CountryInfo.runtimeconfig.json
+/Users/KP/Projects/FlareTest/CountryInfo/bin/Debug/netcoreapp2.1/CountryInfo.runtimeconfig.dev.json
+/Users/KP/Projects/FlareTest/CountryInfo/bin/Debug/netcoreapp2.1/CountryInfo.dll
+/Users/KP/Projects/FlareTest/CountryInfo/bin/Debug/netcoreapp2.1/CountryInfo.pdb
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.csprojAssemblyReference.cache
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.csproj.CoreCompileInputs.cache
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.RazorAssemblyInfo.cache
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.RazorAssemblyInfo.cs
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.AssemblyInfoInputs.cache
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.AssemblyInfo.cs
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.RazorTargetAssemblyInfo.cache
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.dll
+/Users/KP/Projects/FlareTest/CountryInfo/obj/Debug/netcoreapp2.1/CountryInfo.pdb

@@ -1,4 +1,39 @@
 ﻿<Properties StartupConfiguration="{ED865A89-F25D-4B41-A483-54EA277C7FEB}|Default">
-  <MonoDevelop.Ide.ItemProperties.CountryInfo FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/index.html">
+    <Files>
+      <File FileName="src/app/search-country/search-country.component.html" Line="5" Column="13" />
+      <File FileName="package.json" Line="20" Column="33" />
+      <File FileName="src/app/app.module.ts" Line="40" Column="21" />
+      <File FileName="src/app/search-country/search-country.component.ts" Line="4" Column="46" />
+      <File FileName="src/app/app.component.html" Line="150" Column="4" />
+      <File FileName="src/index.html" Line="14" Column="1" />
+      <File FileName="src/app/app.component.ts" Line="11" Column="1" />
+      <File FileName="src/styles.scss" Line="2" Column="1" />
+      <File FileName="src/app/search-country/search-country.component.scss" Line="1" Column="1" />
+      <File FileName="src/app/app.component.scss" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CountryInfo" expanded="True">
+            <Node name="CountryInfo" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="app" expanded="True">
+                  <Node name="search-country" expanded="True" />
+                </Node>
+                <Node name="index.html" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CountryInfo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
