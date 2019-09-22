@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { 
+  Component, 
+  OnInit, 
+  ViewChild,
+  ElementRef
+} from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
@@ -13,22 +18,34 @@ import {
     catchError,
     defaultIfEmpty
 } from 'rxjs/operators';
+import { MatAutocompleteSelectedEvent } from '@angular/material';
+import { CountryInfoService } from '../country-info.service';
+
 @Component({
   selector: 'search-country',
   templateUrl: './search-country.component.html',
   styleUrls: ['./search-country.component.scss']
 })
 export class SearchCountryComponent implements OnInit {
+  @ViewChild('searchInput', {static: false}) searchInput: ElementRef<HTMLInputElement>;
   searchCountriesCtrl = new FormControl();
   filteredCountries: any;
   isLoading = false;
   errorMsg: string;
  
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private countryInfoService: CountryInfoService
   ) { }
+
+  selected(event: MatAutocompleteSelectedEvent) {
+    const selectedCountry = event.option.value;
+    this.searchInput.nativeElement.value = '';
+    this.searchCountriesCtrl.setValue(selectedCountry.name);
+    this.countryInfoService.getCountryInfo(selectedCountry);
+  }
  
-    ngOnInit() {
+  ngOnInit() {
     this.searchCountriesCtrl.valueChanges
         .pipe(
           startWith(''),
@@ -46,10 +63,9 @@ export class SearchCountryComponent implements OnInit {
             }),
             catchError(err => this.filteredCountries = [])
           )
-        )
-    ).subscribe(data => {
-        this.filteredCountries = data;
-        this.isLoading = false;
+        )).subscribe(data => {
+          this.filteredCountries = data;
+          this.isLoading = false;
       });
   }
 }

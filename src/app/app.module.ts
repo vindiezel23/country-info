@@ -36,7 +36,7 @@ import { SearchHistoryComponent } from './search-history/search-history.componen
     MatInputModule,
     MatAutocompleteModule,
     MatButtonModule,
-      MatProgressSpinnerModule
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
