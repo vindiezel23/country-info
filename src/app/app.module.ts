@@ -15,11 +15,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CountryInfoComponent } from './country-info/country-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchCountryComponent
+    SearchCountryComponent,
+    CountryInfoComponent
   ],
   imports: [
     BrowserModule,
