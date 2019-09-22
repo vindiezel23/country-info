@@ -1,28 +1,35 @@
 ﻿<Properties StartupConfiguration="{ED865A89-F25D-4B41-A483-54EA277C7FEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
     <Files>
-      <File FileName="src/app/search-country/search-country.component.html" Line="5" Column="13" />
-      <File FileName="package.json" Line="20" Column="33" />
-      <File FileName="src/app/app.module.ts" Line="40" Column="21" />
-      <File FileName="src/app/search-country/search-country.component.ts" Line="4" Column="46" />
-      <File FileName="src/app/app.component.html" Line="150" Column="4" />
+      <File FileName="src/app/search-country/search-country.component.html" Line="14" Column="7" />
+      <File FileName="package.json" Line="50" Column="1" />
+      <File FileName="src/app/app.module.ts" Line="45" Column="1" />
+      <File FileName="src/app/search-country/search-country.component.ts" Line="35" Column="29" />
+      <File FileName="src/app/app.component.html" Line="261" Column="9" />
       <File FileName="src/index.html" Line="14" Column="1" />
       <File FileName="src/app/app.component.ts" Line="11" Column="1" />
-      <File FileName="src/styles.scss" Line="2" Column="1" />
+      <File FileName="src/styles.scss" Line="2" Column="66" />
       <File FileName="src/app/search-country/search-country.component.scss" Line="1" Column="1" />
       <File FileName="src/app/app.component.scss" Line="1" Column="1" />
+      <File FileName=".gitignore" Line="47" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CountryInfo" expanded="True">
             <Node name="CountryInfo" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="dist" expanded="True">
+                <Node name="CountryInfo" expanded="True" />
+              </Node>
               <Node name="src" expanded="True">
                 <Node name="app" expanded="True">
                   <Node name="search-country" expanded="True" />
                 </Node>
-                <Node name="index.html" selected="True" />
+                <Node name="assets" expanded="True" />
+                <Node name="environments" expanded="True" />
               </Node>
+              <Node name=".gitignore" selected="True" />
             </Node>
           </Node>
         </State>
