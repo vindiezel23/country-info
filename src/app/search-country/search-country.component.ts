@@ -40,9 +40,9 @@ export class SearchCountryComponent implements OnInit {
 
   selected(event: MatAutocompleteSelectedEvent) {
     const selectedCountry = event.option.value;
-    this.searchInput.nativeElement.value = '';
-    this.searchCountriesCtrl.setValue(selectedCountry.name);
     this.countryInfoService.getCountryInfo(selectedCountry);
+    this.searchInput.nativeElement.value = '';
+    this.searchCountriesCtrl.setValue('');
   }
  
   ngOnInit() {

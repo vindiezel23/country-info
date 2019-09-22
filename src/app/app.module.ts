@@ -7,8 +7,7 @@ import {
     MatAutocompleteModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatPlaceholder,
-    MatLabel
+    MatTableModule
 } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -36,7 +35,8 @@ import { SearchHistoryComponent } from './search-history/search-history.componen
     MatInputModule,
     MatAutocompleteModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
