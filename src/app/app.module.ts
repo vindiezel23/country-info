@@ -16,12 +16,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CountryInfoComponent } from './country-info/country-info.component';
+import { SearchHistoryComponent } from './search-history/search-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchCountryComponent,
-    CountryInfoComponent
+    CountryInfoComponent,
+    SearchHistoryComponent
   ],
   imports: [
     BrowserModule,
