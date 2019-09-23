@@ -1,16 +1,22 @@
 ﻿<Properties StartupConfiguration="{ED865A89-F25D-4B41-A483-54EA277C7FEB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/app/country-info/country-info.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tsconfig.json">
     <Files>
-      <File FileName="src/app/search-country/search-country.component.html" Line="3" Column="24" />
-      <File FileName="src/app/search-country/search-country.component.ts" Line="45" Column="59" />
-      <File FileName="src/app/search-country/search-country.component.scss" Line="1" Column="1" />
-      <File FileName="src/app/app.component.scss" Line="1" Column="1" />
-      <File FileName="src/app/country-info.service.ts" Line="16" Column="33" />
-      <File FileName="src/app/country-info/country-info.component.ts" Line="15" Column="81" />
-      <File FileName="src/app/app.module.ts" Line="10" Column="19" />
-      <File FileName="src/app/app.component.html" Line="269" Column="19" />
-      <File FileName="src/app/app.component.ts" Line="11" Column="1" />
-      <File FileName="src/app/country-info/country-info.component.html" Line="32" Column="1" />
+      <File FileName="src/app/search-country/search-country.component.html" Line="13" Column="76" />
+      <File FileName="src/app/search-country/search-country.component.ts" />
+      <File FileName="src/app/search-country/search-country.component.scss" />
+      <File FileName="src/app/app.component.scss" />
+      <File FileName="src/app/country-info.service.ts" Line="37" Column="1" />
+      <File FileName="src/app/country-info/country-info.component.ts" Line="1" Column="1" />
+      <File FileName="src/app/country-info/country-info.component.html" />
+      <File FileName="src/app/app.module.ts" />
+      <File FileName="src/app/app.component.html" />
+      <File FileName="src/app/app.component.ts" />
+      <File FileName="src/app/search-history/search-history.component.html" />
+      <File FileName="src/app/search-history/search-history.component.ts" />
+      <File FileName="src/app/interface/country.ts" Line="1" Column="1" />
+      <File FileName="src/app/interface/search-history.ts" Line="4" Column="17" />
+      <File FileName="package.json" />
+      <File FileName="tsconfig.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,14 +26,13 @@
               <Node name="Dependencies" expanded="True" />
               <Node name="src" expanded="True">
                 <Node name="app" expanded="True">
-                  <Node name="country-info" expanded="True">
-                    <Node name="country-info.component.html" selected="True" />
-                  </Node>
+                  <Node name="country-info" expanded="True" />
+                  <Node name="interface" expanded="True" />
                   <Node name="search-country" expanded="True" />
+                  <Node name="search-history" expanded="True" />
                 </Node>
-                <Node name="assets" expanded="True" />
-                <Node name="environments" expanded="True" />
               </Node>
+              <Node name="tsconfig.json" selected="True" />
             </Node>
           </Node>
         </State>

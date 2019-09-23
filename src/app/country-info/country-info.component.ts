@@ -18,7 +18,6 @@ export class CountryInfoComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.countryInfo$ = this.countryInfoService.countryInfo.subscribe(value => {
       this.dataSource.data = [value];
-      console.log(this.dataSource.data);
     });
   }
 

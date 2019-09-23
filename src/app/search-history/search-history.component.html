@@ -1,1 +1,42 @@
-<p>search-history works!</p>
+<h1>Search History</h1>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+    <!-- Position Column -->
+    <ng-container matColumnDef="flag">
+        <mat-header-cell *matHeaderCellDef> Flag </mat-header-cell>
+        <mat-cell *matCellDef="let element"> <img src="{{element.country.flag}}" height="30" /></mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.country.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="currencies">
+        <mat-header-cell *matHeaderCellDef> Currency </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.country.currencies[0].name }} </mat-cell>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="latlng">
+        <mat-header-cell *matHeaderCellDef> Lat/Lng </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.country.latlng[0]}} {{element.country.latlng[1]}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="area">
+        <mat-header-cell *matHeaderCellDef> Land Area </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.country.area }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="lastsearched">
+        <mat-header-cell *matHeaderCellDef> Last Search </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.lastSearch }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

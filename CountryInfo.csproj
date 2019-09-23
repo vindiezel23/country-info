@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="src\app\interface\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,4 +18,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="src\app\helpers\keyedcollection.ts" />
+    <None Remove="src\app\interface\country.ts" />
+    <None Remove="src\app\interface\search-history.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\interface\country.ts" />
+    <TypeScriptCompile Include="src\app\interface\search-history.ts" />
+  </ItemGroup>
 </Project>
